@@ -33,8 +33,9 @@ namespace CodeJam_RopeIntranet
             };
 
             var sut = new RopeIntranet(ropes);
-            //sut.FindIntersections();
+            int count = sut.FindIntersections();
 
+            Assert.That(count, Is.EqualTo(2));
         }
     }
 
